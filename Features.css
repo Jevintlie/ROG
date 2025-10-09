@@ -1,0 +1,254 @@
+a:hover{
+	color: red;
+}
+
+.dei{
+	color: grey;
+}
+
+.troll{
+	background-image: url(https://dlcdnimgs.asus.com/websites/global/Products/xccq31kw0rrpex5l/v3/features/images/large/1x/07_bg.jpg);
+	background-size: cover;
+	height: 1204px;
+}
+
+.trail{
+	background-color: black;
+	background-size: cover;
+	animation-name: trans;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes trans{
+  	0%   {background-color: black;}
+  	25%  {background-color: black;}
+  	50%  {background-color: #ffffff;}
+  	75%  {background-color: #ffffff;}
+}
+
+.aida{
+	color: white;
+	font-family: courier;
+	padding-top: 50px;
+	text-align: justify;
+	font-size: 20pt;
+}
+
+.reida{
+	padding-top: 90px;
+	color: white;
+	font-family: Copperplate;
+	text-align: center;
+	font-size: 89pt;
+}
+
+.texer{
+	animation-name: textrans;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes textrans{
+  	0%   {color: #ffffff;}
+  	25%  {color: #ffffff;}
+  	50%  {color: black;}
+  	75%  {color: black;}
+  	99.99999%  {color: #ffffff;}
+}
+
+.thelast{
+	padding-top: 50px;
+}
+
+.ree{
+    font-family: courier;
+}
+
+
+li
+{
+	display: inline-block;
+}
+
+*
+{
+	box-sizing: border-box;
+}
+
+.divi
+{
+	
+	width: 800px;
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+	padding-top: 50px;
+	padding-left: 100px;
+	color: white;
+	text-align: justify; 
+}
+
+.qq
+{
+	background-color: black;
+	color: white;
+	border-width: 0px;
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	font-size: 12pt;
+}
+
+button
+{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover 
+{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: verdana; 
+}
+
+video{
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	z-index: -1;
+	object-fit: cover;
+}
+
+
+.wholeproductname{
+	margin-top: 70px;
+	display:flex;
+	text-align:center;
+	justify-content: center;
+}
+
+.nameproduct{
+	margin-left: 3vw;
+	margin-right: 3vw;
+	width:19vw
+}
+
+.tablebar{
+	top:60px;
+	background-color: #000000;
+	color: white;
+	display:none;
+	text-align: center;
+}
+
+.wholespec{
+	margin-bottom: 1vh;
+	display:flex;
+	text-align:justify;
+	justify-content: center;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+.rightspec{
+	margin-bottom: 1vh;
+	display: flex;
+	text-align: right;
+	justify-content: center;
+}
+
+.leftspec{
+	margin-bottom: 1vh;
+	display: flex;
+	text-align: left;
+	justify-content: center;
+}
+
+.cpuspec{
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-top:5vh
+}
+
+.gpuspec{
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-top:1vh
+}
+
+.batteryspec{
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-top:10vh
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.texie{
+	font-family: courier;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: #343a40!important;;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a.logo {
+    float: left;
+    font-size: 20px;
+    color: red;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+            float: none;
+            display: block;
+            text-align: left;
+	}
+    .navbar a.right {
+            float: none;
+        }
+    }
+
+a:hover{
+	color: red;
+}
