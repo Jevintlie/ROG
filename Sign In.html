@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sign In</title>
+
+  <link rel="stylesheet" type="text/css" href="Sign In.css">
+
+</head>
+<body>
+
+<div class="navbar">
+      <a href="Features.html" class="logo">ROG</a>
+
+      <a href="Sign In.html" class="right">Sign In</a>
+      <a href="Contact Us.html" class="right">Contact Us</a>
+      <a href="Tech Specs.html" class="right">Tech Specs</a>
+      <a href="Features.html" class="right">Features</a>
+  </div>
+
+
+
+<div class="divtrail">
+  <form id="signUpForm">
+    <h2 style="color: #000;">Sign Up</h2>
+    <label for="username" style="color: #000;">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="email" style="color: #000;">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="password" style="color: #000;">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <button type="submit">Sign Up</button>
+    <p style="color: #000;">Already have an account? <button type="button" class="toggle-btn" onclick="toggleForm()">Sign In</button></p>
+  </form>
+
+  <form id="signInForm" class="hidden">
+    <h2 style="color: #000;">Sign In</h2>
+    <label for="signInUsername" style="color: #000;">Username:</label>
+    <input type="text" id="signInUsername" name="signInUsername" required>
+    <br>
+    <label for="signInPassword" style="color: #000;">Password:</label>
+    <input type="password" id="signInPassword" name="signInPassword" required>
+    <br>
+    <button type="submit">Sign In</button>
+    <p style="color: #000;">Don't have an account? <button type="button" class="toggle-btn" onclick="toggleForm()">Sign Up</button></p>
+  </form>
+</div>
+
+    <section class="thelast trail">
+        <img src="https://rog.asus.com/microsite/ROG-ZEPHYRUS-G14-ACRNM/images/large/1x/zfwgrgr.svg">
+    </section>
+
+
+
+  <script>
+    function toggleForm() {
+      const signUpForm = document.getElementById('signUpForm');
+      const signInForm = document.getElementById('signInForm');
+
+      signUpForm.classList.toggle('hidden');
+      signInForm.classList.toggle('hidden');
+    }
+  </script>
+
+</body>
+</html>
