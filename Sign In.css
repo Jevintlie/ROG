@@ -1,0 +1,160 @@
+.divtrail {
+      font-family: Arial, sans-serif;
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      
+      background-color: black;
+      background-size: cover;
+      animation-name: trans;
+      animation-duration: 20s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: verdana;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .toggle-btn {
+      background: none;
+      border: none;
+      color: #ff0000;
+      cursor: pointer;
+      text-decoration: underline;
+      font-size: 14px;
+      margin-top: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"] {
+      border: none;
+      border-bottom: 2px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      width: 80%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+      outline: none;
+      border-bottom: 2px solid #ff0000;
+    }
+
+    button[type="submit"] {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #fff;
+      color: #ff0000;
+      border: 2px solid #ff0000;
+    }
+
+    p {
+      font-size: 12px;
+      margin-top: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    p button {
+      background: none;
+      border: none;
+      color: #ff0000;
+      cursor: pointer;
+      text-decoration: underline;
+      font-size: 12px;
+      margin-left: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    p button:hover {
+      color: #cc0000;
+    }
+
+    @keyframes trans{
+    0%   {background-color: black;}
+    25%  {background-color: black;}
+    50%  {background-color: #ffffff;}
+    75%  {background-color: #ffffff;}
+    }
+
+    .thelast{
+    padding-top: 50px;
+    }
+
+.trail{
+    background-color: black;
+    background-size: cover;
+    animation-name: trans;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: #343a40!important;;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a.logo {
+    float: left;
+    font-size: 20px;
+    color: red;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+            float: none;
+            display: block;
+            text-align: left;
+  }
+    .navbar a.right {
+            float: none;
+        }
+    }
+
+a:hover{
+  color: red;
+}
