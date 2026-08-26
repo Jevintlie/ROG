@@ -1,118 +1,280 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-  	<title>Features</title>
-
-  	<link rel="stylesheet" type="text/css" href="index.css">
-  	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An independent front-end product study of the 2020 ROG Zephyrus G14, designed and developed by Jevint Felixciano.">
+  <meta name="theme-color" content="#08090c">
+  <title>Zephyrus G14 — 2020 Product Study</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-	<div class="navbar">
-    	<a href="index.html" class="logo">ROG</a>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Zephyrus G14 product study home">
+      <span class="brand__mark" aria-hidden="true">JF/01</span>
+      <span class="brand__name">G14 / PRODUCT STUDY</span>
+    </a>
 
-    	<a href="Sign In.html" class="right">Sign In</a>
-    	<a href="Contact Us.html" class="right">Contact Us</a>
-    	<a href="Tech Specs.html" class="right">Tech Specs</a>
-    	<a href="index.html" class="right">Features</a>
-	</div>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
 
+    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+      <a href="#overview">Overview</a>
+      <a href="#features">Features</a>
+      <a href="#specifications">Specifications</a>
+      <a href="#case-study">Case study</a>
+    </nav>
+  </header>
 
-	<div class="vid">
-		<video autoplay loop muted>
-			<source src="ad.mp4" type="video/mp4">
-		</video>
-	</div>
+  <main id="main-content">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero__noise" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
 
-	<div class="divi texie">
-		<h1>< / ZEPHYRUS G14 ></h1>
-		<br>
-		<h3>The new ROG Zephyrus G14<br><br> Equipped with the most efficient AMD processors<br><br>Long lasting battery life<br><br> Multiple configurations available</h3>
+      <div class="hero__content reveal">
+        <p class="eyebrow"><span>2020 model retrospective</span><span>Independent student redesign</span></p>
+        <h1 id="hero-title">
+          <span class="hero__kicker">ROG Zephyrus</span>
+          <span class="hero__title">G14</span>
+        </h1>
+        <p class="hero__lede">Desktop-class ambition, distilled into fourteen inches. A front-end study in presenting power without visual noise.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#features">Explore the system <span aria-hidden="true">↘</span></a>
+          <a class="button button--ghost" href="#specifications">View specifications</a>
+        </div>
+      </div>
 
-		<br>
+      <div class="hero__visual reveal" data-device-scene>
+        <div class="orbit orbit--one" aria-hidden="true"></div>
+        <div class="orbit orbit--two" aria-hidden="true"></div>
+        <div class="device" role="img" aria-label="Abstract illustration of an open Zephyrus G14 laptop with an illuminated dot-matrix lid">
+          <div class="device__lid">
+            <div class="matrix" aria-hidden="true">
+              <span class="matrix__slash"></span>
+              <strong>14</strong>
+              <small>REPUBLIC<br>OF GAMERS</small>
+            </div>
+          </div>
+          <div class="device__hinge" aria-hidden="true"></div>
+          <div class="device__base" aria-hidden="true"><span></span></div>
+        </div>
+        <p class="visual-note visual-note--top"><span>01</span> AniMe Matrix lid</p>
+        <p class="visual-note visual-note--bottom"><span>02</span> 14-inch footprint</p>
+      </div>
 
+      <dl class="hero__metrics reveal" aria-label="Product highlights">
+        <div><dt>14″</dt><dd>compact display</dd></div>
+        <div><dt>8C / 16T</dt><dd>up to Ryzen 9</dd></div>
+        <div><dt>RTX 2060</dt><dd>up to 6 GB GDDR6</dd></div>
+        <div><dt>76 Wh</dt><dd>four-cell battery</dd></div>
+      </dl>
+    </section>
 
-		<a href="Tech Specs.html">
-			<button>View Options</button>
-		</a>
+    <section id="overview" class="section overview" aria-labelledby="overview-title">
+      <div class="section-heading reveal">
+        <p class="section-index">01 / Overview</p>
+        <h2 id="overview-title">A gaming machine that learned how to travel.</h2>
+      </div>
+      <div class="overview__copy reveal">
+        <p class="lead">The original G14 challenged the idea that serious laptop performance required a large chassis. Its pitch was a deliberate balance: an eight-core mobile processor, dedicated graphics, colour-accurate display options, and a body starting at 1.6 kg.</p>
+        <p>This redesign turns that balance into the visual system. Dense specifications sit inside a spacious editorial layout, while electric cyan and signal red identify the moments that deserve attention.</p>
+      </div>
+    </section>
 
-	</div>
+    <section id="features" class="section features" aria-labelledby="features-title">
+      <div class="section-heading reveal">
+        <p class="section-index">02 / Core system</p>
+        <h2 id="features-title">Built around four tensions.</h2>
+        <p>Power and restraint. Speed and endurance. Gaming and creative work. Hardware and identity.</p>
+      </div>
 
+      <div class="feature-grid">
+        <article class="feature-card feature-card--performance reveal">
+          <div class="feature-card__topline"><span>Processing</span><span>7 nm</span></div>
+          <div class="processor-visual" aria-hidden="true">
+            <span>ZEN 2</span>
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <div>
+            <p class="feature-card__number">8 <small>cores</small></p>
+            <h3>Parallel power, mobile thermals.</h3>
+            <p>Up to an AMD Ryzen 9 4900HS brings 16-thread processing to a chassis less than two centimetres thick.</p>
+          </div>
+        </article>
 
-<div class="trail texie">
+        <article class="feature-card feature-card--graphics reveal">
+          <div class="feature-card__topline"><span>Graphics</span><span>Turing</span></div>
+          <div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="feature-card__number">2060 <small>RTX</small></p>
+          <h3>Real-time graphics.</h3>
+          <p>Configurations reached an NVIDIA GeForce RTX 2060 Max-Q with 6 GB of GDDR6 memory.</p>
+        </article>
 
-	<br>
-	
-	<div class="wholespec">
-		<div> 
-			<img class="img-fluid" src="https://dlcdnwebimgs.asus.com/gain/949E3794-DC9E-427F-8098-DEE5C6A51AC0">
-		</div>
-		
-		<div class="cpuspec"> 
+        <article class="feature-card feature-card--display reveal">
+          <div class="feature-card__topline"><span>Display</span><span>Pantone validated</span></div>
+          <div class="refresh-visual" aria-hidden="true"><span>120</span><small>HZ</small></div>
+          <h3>Choose fluidity or detail.</h3>
+          <p>The 2020 family offered a 120 Hz Full HD panel or a higher-resolution 60 Hz WQHD option, both with 100% sRGB coverage.</p>
+        </article>
 
-			<h1 class="texer" style="text-align: right;">CPU</h1>
-			
-			<br>
+        <article class="feature-card feature-card--matrix reveal">
+          <div class="feature-card__topline"><span>Identity</span><span>1,215 LEDs</span></div>
+          <div class="dot-field" aria-hidden="true"></div>
+          <div class="feature-card__matrix-copy">
+            <p class="feature-card__number">AniMe <small>Matrix</small></p>
+            <h3>The lid became a canvas.</h3>
+            <p>Selected configurations turned the laptop cover into a programmable monochrome display for text, graphics, and animation.</p>
+          </div>
+        </article>
 
-			<p class="texer">The AMD Ryzen 7 4900HS is the fastest laptop processor tested in multi-threaded workloads, it’s also the fastest in single-thread performance. The 4900HS is 35% faster than the 8-core Core i9-9880H when using all cores, and 7% faster in single-core. The chip is manufactured in the modern 7 nm process at TSMC with 8 cores and 16 threads. The 4900HS integrates all eight cores based on the Zen 2 microarchitecture and support SMT / Hyperthreading.</p>
+        <article class="feature-card feature-card--mobility reveal">
+          <div class="feature-card__topline"><span>Mobility</span><span>GA401</span></div>
+          <div class="weight-visual" aria-hidden="true"><span>1.6</span><small>KG</small></div>
+          <h3>Small enough to leave the desk.</h3>
+          <p>A 14-inch footprint and 76 Wh battery made the G14 a credible work-and-play machine away from a permanent setup.</p>
+        </article>
+      </div>
+    </section>
 
-		</div>
-	</div><br>
-	
+    <section class="section architecture" aria-labelledby="architecture-title">
+      <div class="section-heading reveal">
+        <p class="section-index">03 / Architecture</p>
+        <h2 id="architecture-title">Performance is a system, not one component.</h2>
+      </div>
 
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	
-	<div class="wholespec">
-		<div class="gpuspec"> 
+      <ol class="system-flow reveal">
+        <li>
+          <span>01</span>
+          <div class="system-visual system-visual--compute" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <strong>Compute</strong>
+          <small>Ryzen 4000 HS-series</small>
+        </li>
+        <li>
+          <span>02</span>
+          <div class="system-visual system-visual--render" aria-hidden="true">
+            <i></i><i></i><i></i><b></b>
+          </div>
+          <strong>Render</strong>
+          <small>Dedicated GeForce graphics</small>
+        </li>
+        <li>
+          <span>03</span>
+          <div class="system-visual system-visual--thermal" aria-hidden="true">
+            <i></i><i></i><b></b>
+          </div>
+          <strong>Move heat</strong>
+          <small>Dual-fan thermal design</small>
+        </li>
+        <li>
+          <span>04</span>
+          <div class="system-visual system-visual--display" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <strong>Present</strong>
+          <small>Fast, colour-aware panels</small>
+        </li>
+      </ol>
+    </section>
 
-			<h1 class="texer" style="text-align: left;">GPU</h1>
-			
-			<br>
+    <section id="specifications" class="section specifications" aria-labelledby="specifications-title">
+      <div class="section-heading reveal">
+        <p class="section-index">04 / Specifications</p>
+        <h2 id="specifications-title">2020 GA401 family.</h2>
+        <p>Configurations varied by market. This is a concise range overview, not a current sales listing.</p>
+      </div>
 
-			<p class="texer">The AMD Ryzen 7 4900HS is the fastest laptop processor tested in multi-threaded workloads, it’s also the fastest in single-thread performance. The 4900HS is 35% faster than the 8-core Core i9-9880H when using all cores, and 7% faster in single-core. The chip is manufactured in the modern 7 nm process at TSMC with 8 cores and 16 threads. The 4900HS integrates all eight cores based on the Zen 2 microarchitecture and support SMT / Hyperthreading.</p>
+      <div class="spec-table-wrap reveal" tabindex="0" role="region" aria-label="Scrollable product specification table">
+        <table>
+          <tbody>
+            <tr><th scope="row">Processor</th><td>Up to AMD Ryzen 9 4900HS</td><td>8 cores / 16 threads, up to 4.3 GHz</td></tr>
+            <tr><th scope="row">Graphics</th><td>Up to NVIDIA GeForce RTX 2060 Max-Q</td><td>6 GB GDDR6</td></tr>
+            <tr><th scope="row">Display</th><td>14-inch FHD 120 Hz or WQHD 60 Hz</td><td>IPS-level, anti-glare, 100% sRGB</td></tr>
+            <tr><th scope="row">Memory</th><td>Up to 32 GB DDR4-3200</td><td>Dual-channel support</td></tr>
+            <tr><th scope="row">Storage</th><td>Up to 1 TB M.2 NVMe SSD</td><td>PCIe 3.0</td></tr>
+            <tr><th scope="row">Wireless</th><td>Wi-Fi 6 (802.11ax)</td><td>Bluetooth 5.0</td></tr>
+            <tr><th scope="row">Battery</th><td>76 Wh, four-cell lithium-ion</td><td>180 W adapter on performance configurations</td></tr>
+            <tr><th scope="row">Weight</th><td>From 1.6 kg</td><td>Approximately 1.7 kg with AniMe Matrix</td></tr>
+            <tr><th scope="row">Dimensions</th><td>32.4 × 22.2 cm</td><td>1.79–1.99 cm thick, depending on configuration</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="source-note reveal">Specification summary cross-checked against ASUS/ROG material for the original 2020 GA401 family. Exact availability differed by region.</p>
+    </section>
 
-		</div>
+    <section id="case-study" class="section case-study" aria-labelledby="case-study-title">
+      <div class="case-study__intro reveal">
+        <p class="section-index">05 / Portfolio rebuild</p>
+        <h2 id="case-study-title">From coursework upload to intentional front-end work.</h2>
+        <p>The first version proved that I could assemble a multi-page HTML/CSS experience. This rebuild focuses on what matters in professional front-end delivery: purpose, hierarchy, accessibility, maintainability, and honest product framing.</p>
+      </div>
 
-		<div> 
-			<img src="https://img.militaryaerospace.com/files/base/ebm/mae/image/2020/09/Nvidia_15_Sept_2020.5f5fc695017c6.png?auto=format&fit=max&w=1200" width="330px;" height="242.55px;">
-		</div>
+      <div class="case-study__record">
+        <aside class="case-study__brief reveal">
+          <span>Self-directed brief</span>
+          <p>Keep the hardware story.<br>Replace the borrowed presentation.</p>
+          <small>The original submission became raw material rather than a template. Every page, claim, and interaction had to earn its place in the rebuild.</small>
+        </aside>
 
-	</div><br>
-	
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	
-	<div class="wholespec">
-		<div> 
-			<img src="https://dlcdnwebimgs.asus.com/gain/5FE2240F-FB16-4FCB-AE7E-547D4A085869/w1000/h732" height="500px" width="500px;">
-		</div>
-		
-		<div class="cpuspec"> 
+        <div class="case-study__ledger reveal" role="group" aria-label="Original coursework compared with the portfolio rebuild">
+          <div class="case-study__ledger-head" aria-hidden="true">
+            <span>Original coursework</span>
+            <span>Portfolio rebuild</span>
+          </div>
+          <div class="case-study__row">
+            <strong>Structure</strong>
+            <p><small>Original</small>Four loosely connected pages and repeated stylesheets.</p>
+            <p><small>Rebuild</small>One semantic narrative with a single design system.</p>
+          </div>
+          <div class="case-study__row">
+            <strong>Visuals</strong>
+            <p><small>Original</small>Hotlinked product imagery and a promotional video.</p>
+            <p><small>Rebuild</small>Original CSS-built hardware artwork and motion.</p>
+          </div>
+          <div class="case-study__row">
+            <strong>Behaviour</strong>
+            <p><small>Original</small>Fixed dimensions and decorative colour animation.</p>
+            <p><small>Rebuild</small>Responsive layouts, useful interaction, and reduced-motion support.</p>
+          </div>
+          <div class="case-study__row">
+            <strong>Framing</strong>
+            <p><small>Original</small>Sign-in and contact pages implied a functioning storefront.</p>
+            <p><small>Rebuild</small>An explicit independent study with no data-collecting forms.</p>
+          </div>
+        </div>
+      </div>
 
-			<h1 class="texer" style="text-align: right;">Battery Life</h1>
-			
-			<br>
+      <div class="case-study__closing reveal">
+        <p>What changed most</p>
+        <p><strong>Design is editing.</strong> The strongest decision was not what to add, but what to remove so the product—and the work behind it—could speak clearly.</p>
+      </div>
 
-			<p class="texer">More than 11 hours of battery life of continuous web surfing at 150 nits screen brightness, awesome performance for gaming and VR, thermal management that never gets hot to the touch, and a design that can both satisfy gamers and look at home in more professional settings. All this, plus funky AniMe Matrix personalization features.</p>
+      <div class="case-study__stack reveal" role="list" aria-label="Technology used">
+        <b>Built with</b><span role="listitem">Semantic HTML</span><span role="listitem">Modern CSS</span><span role="listitem">Vanilla JavaScript</span><span role="listitem">Responsive design</span><span role="listitem">Accessibility</span>
+      </div>
+    </section>
+  </main>
 
-		</div>
-
-	</div><br>
-
-	<section class="thelast">
-		<img src="https://rog.asus.com/microsite/ROG-ZEPHYRUS-G14-ACRNM/images/large/1x/zfwgrgr.svg">
-	</section>
-
-</div>
+  <footer class="site-footer">
+    <div>
+      <p class="site-footer__title">G14 / PRODUCT STUDY</p>
+      <p>Designed and developed by Jevint Felixciano.</p>
+    </div>
+    <p class="site-footer__legal">Independent educational redesign. ASUS, ROG, Zephyrus, Ryzen, GeForce, and related marks belong to their respective owners. This site is not affiliated with or endorsed by ASUS.</p>
+    <div class="site-footer__links">
+      <a href="https://rog.asus.com/articles/hands-on/hands-on-the-14-rog-zephyrus-g14-games-as-well-as-it-travels/" rel="noreferrer">Official 2020 source <span aria-hidden="true">↗</span></a>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+    <p class="site-footer__year">© <span data-year>2026</span></p>
+  </footer>
 </body>
 </html>
